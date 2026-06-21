@@ -1,0 +1,72 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #0f1115;
+  color: #e6e8eb;
+}
+
+.app { max-width: 640px; margin: 0 auto; padding: 24px 16px; }
+h1 { font-size: 20px; margin-bottom: 16px; }
+
+.toolbar {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 12px; margin-bottom: 16px; flex-wrap: wrap;
+}
+.filters { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.chip {
+  border: 1px solid #2a2f3a; background: #161a22; color: #c3c8d1;
+  padding: 4px 10px; border-radius: 999px; cursor: pointer; font-size: 12px;
+}
+.chip-active { background: #3b82f6; border-color: #3b82f6; color: #fff; }
+
+.btn-primary {
+  background: #22c55e; color: #06240f; border: 0; border-radius: 8px;
+  padding: 6px 12px; font-weight: 600; cursor: pointer;
+}
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.activity-form {
+  display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+  background: #161a22; border: 1px solid #222732; border-radius: 10px;
+  padding: 12px; margin-bottom: 16px;
+}
+.input {
+  background: #0f1115; border: 1px solid #2a2f3a; color: #e6e8eb;
+  border-radius: 8px; padding: 6px 10px; font-size: 13px; flex: 1; min-width: 120px;
+}
+.form-msg { font-size: 12px; width: 100%; }
+.form-msg-ok { color: #7ee2a8; }
+.form-msg-error { color: #ffb4b4; }
+
+.banner-error { background: #3a1212; color: #ffb4b4; padding: 8px 12px;
+  border-radius: 8px; margin-bottom: 12px; }
+
+.activity-list { list-style: none; margin: 0; padding: 0;
+  display: flex; flex-direction: column; gap: 8px; }
+
+.activity-item {
+  display: flex; align-items: center; gap: 10px;
+  background: #161a22; border: 1px solid #222732;
+  padding: 10px 12px; border-radius: 10px;
+}
+.activity-item.is-pending { opacity: 0.6; }
+
+.badge { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px;
+  background: #2a2f3a; color: #aab2c0; }
+.badge-create { background: #14361f; color: #7ee2a8; }
+.badge-update { background: #1d3050; color: #8fb8ff; }
+.badge-delete { background: #3a1212; color: #ffb4b4; }
+.badge-comment { background: #332a14; color: #f0d27a; }
+.badge-login { background: #2a2440; color: #c3a6ff; }
+
+.actor { font-weight: 600; }
+.entity { color: #8b93a1; font-size: 13px; }
+.time { margin-left: auto; color: #6b7280; font-size: 12px; }
+.pending-tag { color: #f0d27a; font-size: 11px; }
+
+.state, .state-end { text-align: center; padding: 24px; color: #8b93a1; }
+.state-error { color: #ffb4b4; }
+.sentinel { height: 40px; text-align: center; color: #6b7280; padding: 8px; }
