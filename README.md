@@ -1,4 +1,4 @@
-# Activity Feed - Notes & Answers
+# Activity Feed 
 
 Writing up my answers for the four questions here. The actual code is in the
 `server/` folder (Express + MongoDB) and `client/` folder (React). I've explained
